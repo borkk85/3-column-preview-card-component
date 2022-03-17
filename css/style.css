@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', monospace;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+
+    --clr-background-heading-btn: hsl(0, 0%, 95%);
+    --clr-paragraph: hsla(0, 0%, 100%, 0.75);
+
+
+
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    
+}
+
+
+body {
+    font-family: var(--ff-primary);
+    -webkit-font-smoothing: antialiased;
+    background: var(--clr-background-heading-btn);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h2 {
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-secondary);
+    color: var(--clr-background-heading-btn);
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: var(--fw-reg);
+    color: var(--clr-paragraph);
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+a {
+    color: var(--clr-background-heading-btn);
+    text-decoration: none;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.container a {
+    margin-right: 2.5rem;
+}
+
+.container > div {
+    padding: 2rem 2rem;
+}
+
+.tab-1 {
+    height: 440px;
+    background: var(--clr-orange);
+    background-image: url('../images/icon-sedans.svg');
+    background-repeat: no-repeat;
+    background-position: 12% 12%;
+    background-size: 20%;
+}
+
+.tab-2 {
+    height: 440px;
+    background: var(--clr-dark-cyan);
+    background-image: url('../images/icon-suvs.svg');
+    background-repeat: no-repeat;
+    background-position: 12% 12%;
+    background-size: 20%;
+}
+
+.tab-3 {
+    height: 440px;
+    background: var(--clr-very-dark-cyan);
+    background-image: url('../images/icon-luxury.svg');
+    background-repeat: no-repeat;
+    background-position: 12% 12%;
+    background-size: 20%;
+}
+
+.btn {
+    border: 2px solid var(--clr-background-heading-btn);
+    background: var(--clr-background-heading-btn);
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2.2rem;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--clr-background-heading-btn);
+}
+
+.tab-1 a {
+    color: var(--clr-orange);
+}
+
+.tab-2 a {
+    color: var(--clr-dark-cyan);
+
+}
+
+.tab-3 a {
+    color: var(--clr-very-dark-cyan);
+
+}
+
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+    flex: end;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 700px) {
+
+    body {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    .container {
+        width: 80%;
+        grid-template-columns: repeat(235px, 1fr);
+        margin-top: 2.5rem;
+    }
+
+    .container > div {
+        padding: 1.5rem 2rem;
+    }
+
+    .container a {
+        margin-right: 4rem;
+    }
+
+}

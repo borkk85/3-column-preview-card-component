@@ -38,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    line-height: 1.5;
 }
 
 
@@ -66,7 +67,6 @@ a {
 }
 
 
-
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
@@ -78,7 +78,7 @@ a {
 }
 
 .container a {
-    margin-right: 2.5rem;
+    margin-right: 4.5rem;
 }
 
 .container > div {
@@ -183,7 +183,7 @@ a {
     }
 
     .container a {
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
 
 }

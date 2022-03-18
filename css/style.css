@@ -39,7 +39,6 @@ body {
     align-items: center;
     flex-direction: column;
     line-height: 1.5;
-    border: solid 10px black;
     margin: auto;
 
 }
